@@ -62,7 +62,7 @@ export class InvoicesComponent {
   async onSearchClick({startDate, endDate}: { startDate: string, endDate: string }) {
     this.startDate = startDate;
     this.endDate = endDate;
-    await this.loadInvoices(this.pagination.currentPage, startDate, endDate);
+    await this.loadInvoices(1, startDate, endDate);
   }
 
   async onPageChange({page}: { page: number }) {
