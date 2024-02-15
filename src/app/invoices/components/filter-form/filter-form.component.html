@@ -1,0 +1,11 @@
+<div class="flex flex-col md:w-1/2 md:flex-row md:justify-between mb-9">
+  <label class="input input-bordered flex items-center gap-2 mb-4 md:mb-0">
+    Start Date
+    <input type="date" class="grow" [(ngModel)]="startDate"/>
+  </label>
+  <label class="input input-bordered flex items-center gap-2 mb-4 md:mb-0">
+    End Date
+    <input type="date" class="grow" [(ngModel)]="endDate"/>
+  </label>
+  <button class="btn btn-neutral" (click)="onSubmit()">Search</button>
+</div>

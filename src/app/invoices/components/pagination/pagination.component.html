@@ -1,0 +1,22 @@
+<div class="w-1/3 flex mt-4">
+  <button
+    (click)="onPageClick(pagination.prevPage)"
+    class="btn btn-active btn-neutral btn-sm mr-1.5"
+    [disabled]="!pagination.prevPage"
+  >
+    &larr; Previous
+  </button>
+  <button
+    (click)="onPageClick(pagination.nextPage)"
+    class="btn btn-active btn-neutral btn-sm"
+    [disabled]="!pagination.nextPage"
+  >
+    Next &rarr;
+  </button>
+</div>
+
+<div>
+  <span class="text-sm text-neutral-600">
+    Page {{ pagination.currentPage }} of {{ pagination.totalPages }}
+  </span>
+</div>
